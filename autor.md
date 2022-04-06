@@ -2,9 +2,9 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: *\<__insira seu nome aqui__>*
-- Email: *\<insira seu email aqui>*
-- Turma: *\<insira sua turma aqui>*
+- Nome: *\<João Victor Noronha Cunha Santiago>*
+- Email: *\<jvictor99@hotmail.com>*
+- Turma: *\<T03>*
 
 # Questões Finalizadas
 
