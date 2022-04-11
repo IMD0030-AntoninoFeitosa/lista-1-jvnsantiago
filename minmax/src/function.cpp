@@ -18,7 +18,7 @@ std::pair<int,int> min_max( int V[], size_t n )
     int indiceMenor = 0;
     int indiceMaior = 0;
     
-    for(int ii = 1; ii < n; ii++){
+    for(int ii = 0; ii < n; ii++){
         if(V[ii] < menorValor){
           indiceMenor = ii;
           menorValor = V[ii];
