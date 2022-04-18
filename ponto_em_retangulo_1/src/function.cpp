@@ -14,7 +14,7 @@ location_t pt_in_rect( const Ponto &IE, const Ponto &SD, const Ponto &P )
         return location_t::OUTSIDE;
     }
     else if((P.x==IE.x && P.y>=IE.y && P.y>=SD.y) || (P.y==IE.y && P.x>=IE.x && P.x<=SD.x) || (P.x==SD.x && P.y>=IE.y && P.y>=SD.y) || (P.y==SD.y && P.y>=IE.y && P.y<=SD.y)) {
-        return location_t::OUTSIDE;
+        return location_t::BORDER;
     }
     
 
