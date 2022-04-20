@@ -10,11 +10,11 @@ int main(void)
     int cont = 0;
     int valor = 0;
     for(int i = 0; i < SIZE; i++){
-        cin>>valor;
+        cin>> valor;
         if(valor<0){
             cont++;
         }
     }
-    cout<<cont;
+    cout << cont;
     return 0;
 }
