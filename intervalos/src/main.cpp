@@ -47,18 +47,12 @@ int main(void)
         }
       contadorTotal++;
     }
-  //realização do cálculo da porcentagem dos elementos dos intervalos
-    porcentagemInt1= ((double) contadorInt1/contadorTotal)*100;
-    porcentagemInt2= ((double) contadorInt2/contadorTotal)*100;
-    porcentagemInt3= ((double) contadorInt3/contadorTotal)*100;
-    porcentagemInt4= ((double) contadorInt4/contadorTotal)*100;
-    porcentagemFora= ((double) contadorFora/contadorTotal)*100;
 
-    cout<<setprecision(4)<<porcentagemInt1<<endl;
-    cout<<setprecision(4)<<porcentagemInt2<<endl;
-    cout<<setprecision(4)<<porcentagemInt3<<endl;
-    cout<<setprecision(4)<<porcentagemInt4<<endl;
-    cout<<setprecision(4)<<porcentagemFora;
+    cout<<setprecision(4)<<(contadorInt1*100.0)/static_cast<double>(contadorTotal)<<endl;
+    cout<<setprecision(4)<<(contadorInt2*100.0)/static_cast<double>(contadorTotal)<<endl;
+    cout<<setprecision(4)<<(contadorInt3*100.0)/static_cast<double>(contadorTotal)<<endl;
+    cout<<setprecision(4)<<(contadorInt4*100.0)/static_cast<double>(contadorTotal)<<endl;
+    cout<<setprecision(4)<<(contadorFora*100.0)/static_cast<double>(contadorTotal)<<endl;
     
     return 0;
 }
