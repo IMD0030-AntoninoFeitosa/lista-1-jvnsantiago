@@ -16,16 +16,16 @@ int main( void )
     int SomaVizinhos = 0;
     cin>>m;
     cin>>n;
-    if(n>0){
-        for(int ii = m; ii < n; ii++){
-           SomaVizinhos += ii;
-        }
-    }
-    if(n<0){
-        for( int ii = m; ii > n; ii--){
+      if(n>0){
+          for(int ii = m; ii < n; ii++){
+            SomaVizinhos += ii;
+          }
+      }
+      if(n<0){
+          for( int ii = m; ii > n; ii--){
             SomaVizinhos +=ii;
         }
-    }
+      }
     cout<<SomaVizinhos;
     return 0;
 }

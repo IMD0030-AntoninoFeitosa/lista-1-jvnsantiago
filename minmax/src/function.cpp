@@ -31,5 +31,5 @@ std::pair<int,int> min_max( int V[], size_t n )
     }
 
     // TODO: Isso é apenas um STUB. Substitua com seu retorno correto.
-    return {indiceMenor,indiceMaior};
+    return std::make_pair(indiceMenor,indiceMaior);
 }
