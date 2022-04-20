@@ -14,18 +14,24 @@ int main( void )
     int m = 0;
     int n = 0;
     int SomaVizinhos = 0;
-    cin>>m;
-    cin>>n;
+    while (cin>> std::ws >> m >> n){
+      SomaVizinhos = 0;
       if(n>0){
-          for(int ii = m; ii < n; ii++){
-            SomaVizinhos += ii;
+          for(int ii = 0; ii < n; ii++){
+            SomaVizinhos += m;
+            m++;
           }
       }
-      if(n<0){
-          for( int ii = m; ii > n; ii--){
-            SomaVizinhos +=ii;
+      else if(n<0){
+        for( int ii = 0; ii <-n; ii++){
+          SomaVizinhos +=m;
+          m--;
         }
       }
-    cout<<SomaVizinhos;
+      else{
+        SomaVizinhos = m;
+      }
+      cout<<SomaVizinhos<<endl;
+    }
     return 0;
 }

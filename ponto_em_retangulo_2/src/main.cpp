@@ -22,15 +22,28 @@ using std::max;
 int main(void)
 {
     // TODO: Adicione aqui seu código.
-    Ponto x1 = 0, x2 = 0, x3 = 0, x4 = 0;
-    while(cin>> std::ws >> x1 >> y1 >> x2 >> y2 >> x3 >> y3){
-        if(x1 == x2 && y1 == y2){
-            cout>>"invalid";
+    int x1 = 0, y1 = 0, x2 = 0, y2 = 0, x = 0, y = 0;
+    while(cin >> x1 >> y1 >> x2 >> y2 >> x >> y){
+        if (x1 != x2 || y1 != y2){
+          Ponto p (x,y);
+          Ponto ie (x1, y1);
+          Ponto sd (x2, y2);
+          location_t loc;
+          if(x1 <= x2 && y1 <= y2){
+            loc = pt_in_rect(ie, sd, p);
+          }else{
+            loc = pt_in_rect(ie, sd, p);
+          }
+          switch (loc){
+            case location_t::OUTSIDE: cout<< "outside" <<endl; break;
+            case location_t::INSIDE: cout << "inside" <<endl; break;
+            case location_t::BORDER: cout<< "border"<<endl; break;
+          }
         }
-        else{
-            location_t pt_in_rect( const Ponto&, const Ponto&, const Ponto& );
-        }
-    
+      else{
+        cout<<"invalid"<<endl;
+      }
     }
+  
     return 0;
 }
